@@ -111,7 +111,7 @@ export default function FeaturedBooksGrid({
   const dataset = fillProductsWithPlaceholders(products, desiredLength)
 
   return (
-    <section className="mx-auto max-w-6xl space-y-6 px-4">
+    <section className="layout-frame space-y-6">
       <header className="text-right">
         <p className="text-xs font-semibold uppercase tracking-[0.35em] text-secondary">{subtitle}</p>
         <h2 className="mt-2 text-2xl font-extrabold text-primary">{title}</h2>

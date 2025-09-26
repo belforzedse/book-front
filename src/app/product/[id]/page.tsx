@@ -13,7 +13,7 @@ export default async function ProductPage({ params }: { params: { id: string } }
   const description = product.description && product.description.length > 0 ? product.description : "توضیحاتی برای این محصول ثبت نشده است."
 
   return (
-    <div className="mx-auto max-w-5xl space-y-8 px-4 py-12 text-neutral">
+    <div className="layout-frame space-y-8 py-12 text-neutral">
       <div className="grid gap-8 md:grid-cols-[1fr_1.2fr]">
         <div className="relative aspect-[3/4] overflow-hidden rounded-3xl bg-card shadow-md">
           <Image

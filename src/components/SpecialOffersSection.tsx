@@ -90,7 +90,7 @@ export default function SpecialOffersSection({ title, subtitle, products }: Spec
   const [first, second, third] = dataset
 
   return (
-    <section className="mx-auto max-w-6xl space-y-8 px-4">
+    <section className="layout-frame space-y-8">
       <header className="space-y-2 text-right">
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-accent">{subtitle}</p>
         <h2 className="text-3xl font-black text-primary">{title}</h2>

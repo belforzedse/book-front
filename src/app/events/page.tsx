@@ -15,7 +15,7 @@ export default async function EventsPage() {
   const items = events.length > 0 ? events : FALLBACK_EVENTS
 
   return (
-    <div className="mx-auto max-w-5xl space-y-6 px-4 py-12 text-neutral">
+    <div className="layout-frame space-y-6 py-12 text-neutral">
       <div className="space-y-2 text-right">
         <h1 className="text-2xl font-bold text-primary">رویدادها</h1>
         <p className="text-sm text-neutral/70">با برنامه‌های فرهنگی و جلسات نقد و بررسی همراه شوید.</p>

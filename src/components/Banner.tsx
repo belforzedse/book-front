@@ -114,7 +114,7 @@ export default function Banner({
   const resolvedImage = image || PLACEHOLDER_IMAGE
 
   return (
-    <section className="mx-auto max-w-6xl px-4">
+    <section className="layout-frame">
       <div className="relative overflow-hidden rounded-[48px] border border-white/5 bg-slate-950 text-white shadow-[0_40px_120px_-45px_rgba(15,23,42,0.9)]">
         <div className="absolute inset-0">
           <Image
