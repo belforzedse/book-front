@@ -1,0 +1,76 @@
+/**
+ *
+ * Name:            Ravi Fonts
+ * Version:         2.3
+ * Author:          Reza Bakhtiarifard (rbakhtiarifard.ir)
+ * Created on:      November 2023
+ * Updated on:      November 2023
+ * Vendor:          http://fontiran.com
+ * Copyright:       Commercial/Proprietary Software
+ *
+ * Ravi fonts are proprietary. For licensing info visit www.fontiran.com.
+ */
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/fonts/woff/RaviFaNum-Thin.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/woff/RaviFaNum-Light.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/woff/RaviFaNum-Regular.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/woff/RaviFaNum-Medium.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/woff/RaviFaNum-SemiBold.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/woff/RaviFaNum-Bold.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/woff/RaviFaNum-Black.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Ravi FaNum';
+    font-style: normal;
+    font-weight: 950;
+    src: url('/fonts/woff/RaviFaNum-ExtraBlack.woff') format('woff'),
+         url('/fonts/woff2/RaviFaNum-ExtraBlack.woff2') format('woff2');
+}

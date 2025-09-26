@@ -1,27 +1,16 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
 import Providers from "@/components/Providers"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { cn } from "@/lib/utils"
 import "./globals.css"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
-
 const langConfig = process.env.NEXT_PUBLIC_LANG === "fa" ? "fa" : "en"
 const dir = langConfig === "fa" ? "rtl" : "ltr"
 
 export const metadata: Metadata = {
-  title: "شهرکتاب",
-  description: "فروشگاه آنلاین کتاب و محصولات فرهنگی",
+  title: "Shahreketab",
+  description: "Online bookstore powered by Shahreketab.",
 }
 
 export default function RootLayout({
@@ -29,7 +18,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const bodyClass = cn(geistSans.variable, geistMono.variable, "bg-gray-50 text-gray-900 antialiased")
+  const bodyClass = cn("bg-gray-50 text-gray-900 antialiased font-sans")
 
   return (
     <html lang={langConfig} dir={dir} suppressHydrationWarning>
