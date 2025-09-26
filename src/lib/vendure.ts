@@ -37,6 +37,7 @@ export type ProductSummary = {
   image: string
   author?: string
   compareAtPrice?: number
+  description?: string
 }
 
 export type ProductDetail = ProductSummary & {
@@ -110,6 +111,7 @@ export async function getProducts(take = 12): Promise<ProductSummary[]> {
       "      id",
       "      name",
       "      slug",
+      "      description",
       "      featuredAsset { preview }",
       "      assets { preview }",
       "      variants {",
@@ -138,6 +140,7 @@ export async function getProducts(take = 12): Promise<ProductSummary[]> {
         image: resolveImage(item),
         author: resolveAuthor(item),
         compareAtPrice: resolveCompareAtPrice(variant),
+        description: item.description || undefined,
       }
     })
   } catch (error) {

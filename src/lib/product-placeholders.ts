@@ -9,6 +9,7 @@ export function createPlaceholderProducts(count: number): ProductSummary[] {
     priceWithTax: 0,
     currencyCode: "IRR",
     image: PLACEHOLDER_IMAGE,
+    description: "به زودی کتاب‌های بیشتری در این بخش قرار می‌گیرند.",
   }))
 }
 
