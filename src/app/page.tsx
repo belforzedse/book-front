@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero"
+import FeatureHighlights from "@/components/FeatureHighlights"
 import CategoryCarousel from "@/components/CategoryCarousel"
 import BookCarousel from "@/components/BookCarousel"
 import Banner from "@/components/Banner"
@@ -17,6 +18,7 @@ export default async function HomePage() {
   return (
     <div className="space-y-16 pb-20 text-neutral">
       <Hero products={heroProducts} />
+      <FeatureHighlights />
       <CategoryCarousel />
       <BookCarousel title="پرفروش‌ها" products={bestSellers} />
       <BookCarousel title="تخفیف‌های ویژه" products={discounted} />
