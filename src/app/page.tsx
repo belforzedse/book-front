@@ -6,6 +6,10 @@ import AudioBooksSlider from "@/components/AudioBooksSlider"
 import SpecialOffersSection from "@/components/SpecialOffersSection"
 import Banner from "@/components/Banner"
 import BlogPreview from "@/components/BlogPreview"
+import CustomerClubCTA from "@/components/CustomerClubCTA"
+import StoreShowcase from "@/components/StoreShowcase"
+import LoyaltyProgramBanner from "@/components/LoyaltyProgramBanner"
+import BookshelfFooter from "@/components/BookshelfFooter"
 import { getProducts } from "@/lib/vendure"
 
 export default async function HomePage() {
@@ -38,6 +42,10 @@ export default async function HomePage() {
       />
       <FeaturedBooksGrid title="توسعه فردی" subtitle="GROWTH" products={personalGrowth} />
       <BlogPreview />
+      <CustomerClubCTA />
+      <StoreShowcase />
+      <LoyaltyProgramBanner />
+      <BookshelfFooter />
     </div>
   )
 }
