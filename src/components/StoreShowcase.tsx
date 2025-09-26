@@ -17,8 +17,8 @@ const storeHighlights = [
 
 export default function StoreShowcase() {
   return (
-    <section className="px-4">
-      <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-white shadow-[0_40px_90px_-60px_rgba(15,23,42,0.25)]">
+    <section className="layout-frame">
+      <div className="overflow-hidden rounded-3xl bg-white shadow-[0_40px_90px_-60px_rgba(15,23,42,0.25)]">
         <div className="grid gap-10 md:grid-cols-2">
           <div className="relative order-2 overflow-hidden bg-gradient-to-br from-[#EEF2FF] via-[#DBEAFE] to-[#E0F2FE] md:order-1">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(249,115,22,0.18),transparent_50%)]" />

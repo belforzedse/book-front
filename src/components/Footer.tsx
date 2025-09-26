@@ -12,7 +12,7 @@ const SOCIALS = [
 export default function Footer() {
   return (
     <footer className="mt-16 bg-primary text-white">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-10 text-sm text-white/80">
+      <div className="layout-frame flex flex-col gap-8 py-10 text-sm text-white/80">
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           <div className="space-y-3">
             <h3 className="text-lg font-semibold text-white">شهرکتاب</h3>

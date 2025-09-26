@@ -53,7 +53,7 @@ const features = [
 export default function FeatureHighlights() {
   return (
     <section className="bg-background py-12">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4">
+      <div className="layout-frame flex flex-col gap-8">
         <div className="space-y-2 text-center lg:text-right">
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">خدمات ما</span>
           <h2 className="text-2xl font-bold text-primary md:text-3xl">مزیت‌های همراه شهرکتاب</h2>
@@ -61,7 +61,7 @@ export default function FeatureHighlights() {
             سه دلیل اصلی که مشتریان ما همیشه به کتاب‌فروشی آنلاین شهرکتاب باز می‌گردند.
           </p>
         </div>
-        <div className="-mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 md:grid md:snap-none md:grid-cols-3 md:overflow-visible">
+        <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 md:grid md:snap-none md:grid-cols-3 md:overflow-visible">
           {features.map((feature) => (
             <article
               key={feature.title}

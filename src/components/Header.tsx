@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full bg-gradient-to-r from-header-start via-header-mid to-header-end text-white shadow-lg">
       <div className="border-b border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-2 text-xs sm:text-sm text-white/80">
+        <div className="layout-frame flex flex-wrap items-center justify-between gap-3 py-2 text-xs sm:text-sm text-white/80">
           <div className="flex flex-wrap items-center gap-4">
             <span className="flex items-center gap-1.5">
               <Phone className="size-4 text-white/60" aria-hidden="true" />
@@ -62,7 +62,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:gap-6">
+      <div className="layout-frame flex flex-col gap-4 py-4 sm:flex-row sm:items-center sm:gap-6">
         <div className="flex w-full items-center justify-between gap-3">
           <Link href="/" className="text-2xl font-black tracking-tight text-white sm:text-3xl">
             شهرکتاب

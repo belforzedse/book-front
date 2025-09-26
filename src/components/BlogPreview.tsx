@@ -44,7 +44,7 @@ export default function BlogPreview() {
   }, [data])
 
   return (
-    <section className="mx-auto max-w-6xl space-y-4 px-4 py-4">
+    <section className="layout-frame space-y-4 py-4">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-primary">اخبار و مقالات</h2>
         <span className="text-xs text-neutral/70">با تازه‌ترین مطالب همراه شوید</span>

@@ -2,8 +2,8 @@ import Link from "next/link"
 
 export default function CustomerClubCTA() {
   return (
-    <section className="px-4">
-      <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-primary-dark text-white shadow-[0_40px_90px_-45px_rgba(30,58,138,0.7)]">
+    <section className="layout-frame">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-primary-dark text-white shadow-[0_40px_90px_-45px_rgba(30,58,138,0.7)]">
         <div className="pointer-events-none absolute -left-10 top-6 h-32 w-32 rounded-full bg-white/10 blur-2xl" />
         <div className="pointer-events-none absolute -right-6 bottom-10 h-40 w-40 rounded-full bg-accent/30 blur-3xl" />
         <div className="grid items-center gap-10 p-8 md:grid-cols-[1.1fr,0.9fr] md:p-12">

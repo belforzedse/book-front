@@ -23,8 +23,8 @@ const socialLinks = [
 
 export default function BookshelfFooter() {
   return (
-    <footer className="px-4 pb-8">
-      <div className="mx-auto max-w-6xl overflow-hidden rounded-[40px] bg-secondary/80 text-primary shadow-[0_45px_110px_-70px_rgba(30,58,138,0.45)]">
+    <footer className="layout-frame pb-8">
+      <div className="overflow-hidden rounded-[40px] bg-secondary/80 text-primary shadow-[0_45px_110px_-70px_rgba(30,58,138,0.45)]">
         <div className="grid gap-12 px-8 pb-10 pt-12 md:grid-cols-[1.1fr,0.9fr] md:px-12 md:pb-14">
           <div className="space-y-6">
             <h2 className="text-2xl font-bold">کتابخانه‌ای که همیشه باز است</h2>
