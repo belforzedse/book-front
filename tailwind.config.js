@@ -9,6 +9,11 @@ const config = {
           dark: "#2C3E91",
         },
         secondary: "#FDF6EC",
+        header: {
+          start: "#4C1D95",
+          mid: "#312E81",
+          end: "#1D4ED8",
+        },
         accent: {
           DEFAULT: "#F97316",
           dark: "#EA580C",

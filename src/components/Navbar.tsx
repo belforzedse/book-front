@@ -1,4 +1,7 @@
+"use client"
+
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 type NavbarProps = {
@@ -13,18 +16,29 @@ const LINKS = [
 ]
 
 export default function Navbar({ className }: NavbarProps) {
+  const pathname = usePathname()
+
   return (
-    <nav className={cn("border-t border-primary-dark/30 bg-primary text-white", className)}>
-      <div className="mx-auto flex max-w-6xl items-center justify-center gap-6 px-4 py-3 text-sm font-medium text-white/80">
-        {LINKS.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="transition hover:text-secondary"
-          >
-            {item.label}
-          </Link>
-        ))}
+    <nav className={cn("bg-transparent text-white", className)}>
+      <div className="mx-auto flex max-w-6xl items-center gap-3 overflow-x-auto px-4 py-3 text-sm">
+        {LINKS.map((item) => {
+          const isActive =
+            item.href === "/"
+              ? pathname === item.href
+              : pathname.startsWith(item.href)
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "flex-shrink-0 rounded-full border border-white/15 bg-white/5 px-4 py-2 font-medium text-white/80 transition-all hover:border-white/35 hover:bg-white/15 hover:text-white",
+                isActive && "border-white bg-white text-header-mid shadow-md"
+              )}
+            >
+              {item.label}
+            </Link>
+          )
+        })}
       </div>
     </nav>
   )
