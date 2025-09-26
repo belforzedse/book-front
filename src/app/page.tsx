@@ -11,7 +11,7 @@ import { getProducts } from "@/lib/vendure"
 export default async function HomePage() {
   const products = await getProducts(18)
   const heroProducts = products.slice(0, 5)
-  const bestSellers = products.slice(0, 4)
+  const bestSellers = products.slice(0, 8)
   const audioSelection = products.slice(4, 12)
   const discounted = products.filter((item) =>
     typeof item.compareAtPrice === "number" && item.compareAtPrice > item.priceWithTax,
@@ -27,6 +27,8 @@ export default async function HomePage() {
         title="پرفروش‌های هفته"
         subtitle="TOP PICKS"
         products={bestSellers}
+        desiredLength={8}
+        gridClassName="grid gap-6 sm:grid-cols-2 md:grid-cols-4"
       />
       <AudioBooksSlider title="کتاب‌های صوتی منتخب" subtitle="AUDIO PICKS" products={audioSelection} />
       <SpecialOffersSection title="پیشنهادهای ویژه کتاب‌خوان‌ها" subtitle="SPECIAL DEALS" products={discounted} />
