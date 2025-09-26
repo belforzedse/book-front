@@ -12,17 +12,17 @@ export default function CategoryCarousel() {
   return (
     <section className="mx-auto max-w-6xl px-4">
       <div className="flex items-center justify-between pb-4">
-        <h2 className="text-lg font-semibold text-gray-900">دسته‌بندی‌ها</h2>
-        <span className="text-sm text-gray-500">بر اساس علایق خود انتخاب کنید</span>
+        <h2 className="text-lg font-semibold text-primary">دسته‌بندی‌ها</h2>
+        <span className="text-sm text-neutral/70">بر اساس علایق خود انتخاب کنید</span>
       </div>
       <div className="flex gap-4 overflow-x-auto pb-2">
         {CATEGORIES.map((item) => (
           <div
             key={item.label}
-            className="flex min-w-[150px] flex-col items-center gap-3 rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm transition hover:-translate-y-1 hover:border-blue-300"
+            className="flex min-w-[150px] flex-col items-center gap-3 rounded-2xl bg-card p-5 text-center text-neutral shadow-md transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <item.Icon className="size-8 text-blue-600" aria-hidden="true" />
-            <span className="text-sm font-medium text-gray-700">{item.label}</span>
+            <item.Icon className="size-8 text-primary" aria-hidden="true" />
+            <span className="text-sm font-medium text-primary/90">{item.label}</span>
           </div>
         ))}
       </div>

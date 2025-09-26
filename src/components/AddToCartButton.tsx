@@ -35,7 +35,7 @@ export default function AddToCartButton({ product }: AddToCartButtonProps) {
       type="button"
       onClick={handleClick}
       disabled={pending}
-      className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-blue-300"
+      className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-600 disabled:cursor-not-allowed disabled:bg-accent/50"
     >
       {pending ? "در حال افزودن..." : "افزودن به سبد"}
     </button>

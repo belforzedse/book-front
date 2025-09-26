@@ -12,8 +12,8 @@ type BlogCardProps = {
 
 export default function BlogCard({ id, title, publishedAt, image, snippet }: BlogCardProps) {
   return (
-    <article className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-      <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-gray-100">
+    <article className="flex flex-col gap-3 rounded-2xl bg-card p-4 text-neutral shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+      <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-secondary">
         <Image
           src={image || PLACEHOLDER_IMAGE}
           alt={title}
@@ -23,14 +23,14 @@ export default function BlogCard({ id, title, publishedAt, image, snippet }: Blo
         />
       </div>
       <div className="space-y-2 text-right">
-        <time dateTime={publishedAt} className="text-xs text-gray-400">
+        <time dateTime={publishedAt} className="text-xs text-neutral/60">
           {formatDate(publishedAt)}
         </time>
-        <h3 className="text-base font-semibold text-gray-900">{title}</h3>
-        {snippet ? <p className="text-sm text-gray-600">{truncate(snippet, 110)}</p> : null}
+        <h3 className="text-base font-semibold text-primary">{title}</h3>
+        {snippet ? <p className="text-sm text-neutral/80">{truncate(snippet, 110)}</p> : null}
         <Link
           href={"/news?focus=" + id}
-          className="text-sm font-semibold text-blue-600 transition hover:text-blue-700"
+          className="text-sm font-semibold text-accent transition hover:text-orange-600"
         >
           ادامه مطلب
         </Link>

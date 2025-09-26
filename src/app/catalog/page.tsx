@@ -18,16 +18,16 @@ export default async function CatalogPage({
     : products
 
   return (
-    <div className="mx-auto max-w-6xl space-y-8 px-4 py-12">
+    <div className="mx-auto max-w-6xl space-y-8 px-4 py-12 text-neutral">
       <div className="flex flex-col gap-2 text-right">
-        <h1 className="text-2xl font-bold text-gray-900">فهرست کتاب‌ها</h1>
-        <p className="text-sm text-gray-500">
+        <h1 className="text-2xl font-bold text-primary">فهرست کتاب‌ها</h1>
+        <p className="text-sm text-neutral/70">
           {query.length > 0 ? "نتایج جست‌وجو برای \"" + query + "\"" : "همه کتاب‌های موجود"}
         </p>
-        <span className="text-xs text-gray-400">{filtered.length} نتیجه</span>
+        <span className="text-xs text-neutral/50">{filtered.length} نتیجه</span>
       </div>
       {filtered.length === 0 ? (
-        <div className="rounded-2xl border border-gray-100 bg-white p-10 text-center text-sm text-gray-500 shadow-sm">
+        <div className="rounded-2xl bg-card p-10 text-center text-sm text-neutral/70 shadow-sm">
           موردی یافت نشد. لطفا عبارت دیگری را امتحان کنید.
         </div>
       ) : (

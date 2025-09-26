@@ -15,14 +15,14 @@ export default function CartPage() {
   const currency = items.length > 0 ? items[0].currencyCode : "IRR"
 
   return (
-    <div className="mx-auto max-w-5xl space-y-8 px-4 py-12">
+    <div className="mx-auto max-w-5xl space-y-8 px-4 py-12 text-neutral">
       <div className="flex flex-col gap-2 text-right">
-        <h1 className="text-2xl font-bold text-gray-900">سبد خرید</h1>
-        <p className="text-sm text-gray-500">بررسی اقلام انتخاب شده و ادامه فرایند خرید</p>
+        <h1 className="text-2xl font-bold text-primary">سبد خرید</h1>
+        <p className="text-sm text-neutral/70">بررسی اقلام انتخاب شده و ادامه فرایند خرید</p>
       </div>
       {items.length === 0 ? (
-        <div className="rounded-2xl border border-gray-100 bg-white p-10 text-center text-sm text-gray-500 shadow-sm">
-          سبد خرید شما خالی است. از بخش <Link href="/catalog" className="text-blue-600">فهرست کتاب‌ها</Link> بازدید کنید.
+        <div className="rounded-2xl bg-card p-10 text-center text-sm text-neutral/70 shadow-sm">
+          سبد خرید شما خالی است. از بخش <Link href="/catalog" className="text-accent hover:text-orange-600">فهرست کتاب‌ها</Link> بازدید کنید.
         </div>
       ) : (
         <div className="space-y-6">
@@ -30,9 +30,9 @@ export default function CartPage() {
             {items.map((item) => (
               <li
                 key={item.id}
-                className="flex flex-col gap-4 rounded-2xl border border-gray-100 bg-white p-4 shadow-sm md:flex-row md:items-center"
+                className="flex flex-col gap-4 rounded-2xl bg-card p-4 text-neutral shadow-md transition hover:-translate-y-1 hover:shadow-lg md:flex-row md:items-center"
               >
-                <div className="relative h-28 w-24 overflow-hidden rounded-xl bg-gray-100">
+                <div className="relative h-28 w-24 overflow-hidden rounded-xl bg-secondary/60">
                   <Image
                     src={item.image || PLACEHOLDER_IMAGE}
                     alt={item.name}
@@ -42,17 +42,17 @@ export default function CartPage() {
                   />
                 </div>
                 <div className="flex flex-1 flex-col gap-2 text-right">
-                  <span className="text-sm font-semibold text-gray-900">{item.name}</span>
-                  <span className="text-xs text-gray-500">تعداد: {item.qty}</span>
+                  <span className="text-sm font-semibold text-primary">{item.name}</span>
+                  <span className="text-xs text-neutral/70">تعداد: {item.qty}</span>
                 </div>
                 <div className="flex items-center gap-4 self-end md:self-center">
-                  <strong className="text-base text-blue-700">
+                  <strong className="text-base text-primary">
                     {formatCurrency(item.priceWithTax * item.qty, item.currencyCode)}
                   </strong>
                   <button
                     type="button"
                     onClick={() => removeItem(item.id)}
-                    className="flex items-center gap-1 rounded-full border border-gray-200 px-3 py-1 text-xs text-gray-500 transition hover:border-red-300 hover:text-red-600"
+                    className="flex items-center gap-1 rounded-full border border-neutral/30 px-3 py-1 text-xs text-neutral/70 transition hover:border-danger/60 hover:text-danger"
                   >
                     <Trash2 className="size-4" aria-hidden="true" /> حذف
                   </button>
@@ -60,22 +60,22 @@ export default function CartPage() {
               </li>
             ))}
           </ul>
-          <div className="flex flex-col gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+          <div className="flex flex-col gap-4 rounded-2xl bg-card p-6 text-neutral shadow-md">
             <div className="flex items-center justify-between text-sm">
-              <span className="text-gray-500">مجموع</span>
-              <strong className="text-xl text-blue-700">{formatCurrency(total, currency)}</strong>
+              <span className="text-neutral/70">مجموع</span>
+              <strong className="text-xl text-primary">{formatCurrency(total, currency)}</strong>
             </div>
             <div className="flex flex-wrap gap-3">
               <button
                 type="button"
                 onClick={clearCart}
-                className="rounded-full border border-gray-200 px-6 py-2 text-sm text-gray-600 transition hover:border-red-300 hover:text-red-600"
+                className="rounded-full border border-neutral/30 px-6 py-2 text-sm text-neutral/70 transition hover:border-danger/60 hover:text-danger"
               >
                 خالی کردن سبد
               </button>
               <button
                 type="button"
-                className="flex-1 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+                className="flex-1 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
               >
                 ثبت سفارش (به زودی)
               </button>

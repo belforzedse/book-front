@@ -10,14 +10,14 @@ const FALLBACK_NEWS = [
   {
     id: "placeholder-1",
     title: "خبر فرهنگی شهرکتاب",
-    publishedAt: new Date().toISOString(),
+    publishedAt: "2024-01-01T00:00:00.000Z",
     image: PLACEHOLDER_IMAGE,
     snippet: "به زودی تازه‌ترین اخبار فرهنگی و هنری شهرکتاب در این بخش منتشر می‌شود.",
   },
   {
     id: "placeholder-2",
     title: "رویدادهای تازه نشر",
-    publishedAt: new Date().toISOString(),
+    publishedAt: "2024-01-02T00:00:00.000Z",
     image: PLACEHOLDER_IMAGE,
     snippet: "اخبار انتشار کتاب‌های جدید و گفتگو با نویسندگان محبوب را از دست ندهید.",
   },
@@ -46,16 +46,16 @@ export default function BlogPreview() {
   return (
     <section className="mx-auto max-w-6xl space-y-4 px-4 py-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-gray-900">اخبار و مقالات</h2>
-        <span className="text-xs text-gray-500">با تازه‌ترین مطالب همراه شوید</span>
+        <h2 className="text-lg font-semibold text-primary">اخبار و مقالات</h2>
+        <span className="text-xs text-neutral/70">با تازه‌ترین مطالب همراه شوید</span>
       </div>
       {isLoading ? (
-        <p className="rounded-2xl border border-gray-100 bg-white p-6 text-center text-sm text-gray-500 shadow-sm">
+        <p className="rounded-2xl bg-card p-6 text-center text-sm text-neutral/70 shadow-sm">
           در حال بارگذاری...
         </p>
       ) : null}
       {isError && !isLoading ? (
-        <p className="rounded-2xl border border-red-100 bg-red-50 p-4 text-center text-sm text-red-600 shadow-sm">
+        <p className="rounded-2xl bg-card p-4 text-center text-sm text-danger shadow-sm">
           بارگیری اخبار با خطا مواجه شد؛ محتوای نمونه نمایش داده می‌شود.
         </p>
       ) : null}

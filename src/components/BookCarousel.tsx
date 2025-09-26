@@ -28,8 +28,8 @@ export default function BookCarousel({ title, products }: BookCarouselProps) {
   return (
     <section className="mx-auto max-w-6xl space-y-4 px-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
-        <span className="text-xs text-gray-500">نمایش {dataset.length} مورد</span>
+        <h2 className="text-lg font-semibold text-primary">{title}</h2>
+        <span className="text-xs text-neutral/70">نمایش {dataset.length} مورد</span>
       </div>
       <div className="flex gap-4 overflow-x-auto pb-2">
         {dataset.map((product) => (

@@ -14,13 +14,13 @@ const LINKS = [
 
 export default function Navbar({ className }: NavbarProps) {
   return (
-    <nav className={cn("border-t border-gray-100 bg-white", className)}>
-      <div className="mx-auto flex max-w-6xl items-center justify-center gap-6 px-4 py-3 text-sm font-medium text-gray-600">
+    <nav className={cn("border-t border-primary-dark/30 bg-primary text-white", className)}>
+      <div className="mx-auto flex max-w-6xl items-center justify-center gap-6 px-4 py-3 text-sm font-medium text-white/80">
         {LINKS.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className="transition hover:text-blue-600"
+            className="transition hover:text-secondary"
           >
             {item.label}
           </Link>

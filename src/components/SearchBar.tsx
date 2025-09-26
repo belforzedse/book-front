@@ -30,21 +30,21 @@ export default function SearchBar({ className }: SearchBarProps) {
     <form
       onSubmit={handleSubmit}
       className={cn(
-        "flex w-full max-w-lg items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm shadow-sm",
+        "flex w-full max-w-lg items-center gap-2 rounded-full border border-neutral/20 bg-card px-4 py-2 text-sm text-neutral shadow-sm",
         className,
       )}
     >
-      <Search className="size-4 text-gray-500" aria-hidden="true" />
+      <Search className="size-4 text-neutral/60" aria-hidden="true" />
       <input
         value={term}
         onChange={(event) => setTerm(event.target.value)}
         placeholder="جست‌وجوی کتاب"
-        className="flex-1 bg-transparent text-sm outline-none"
+        className="flex-1 bg-transparent text-sm text-neutral placeholder:text-neutral/40 outline-none"
         aria-label="جست‌وجوی کتاب"
       />
       <button
         type="submit"
-        className="rounded-full bg-blue-600 px-4 py-1 text-sm font-medium text-white transition hover:bg-blue-700"
+        className="rounded-full bg-accent px-4 py-1 text-sm font-medium text-white transition hover:bg-orange-600"
       >
         جست‌وجو
       </button>

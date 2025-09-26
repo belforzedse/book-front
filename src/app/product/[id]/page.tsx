@@ -13,9 +13,9 @@ export default async function ProductPage({ params }: { params: { id: string } }
   const description = product.description && product.description.length > 0 ? product.description : "توضیحاتی برای این محصول ثبت نشده است."
 
   return (
-    <div className="mx-auto max-w-5xl space-y-8 px-4 py-12">
+    <div className="mx-auto max-w-5xl space-y-8 px-4 py-12 text-neutral">
       <div className="grid gap-8 md:grid-cols-[1fr_1.2fr]">
-        <div className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-sm">
+        <div className="relative aspect-[3/4] overflow-hidden rounded-3xl bg-card shadow-md">
           <Image
             src={product.image || PLACEHOLDER_IMAGE}
             alt={product.name}
@@ -26,14 +26,14 @@ export default async function ProductPage({ params }: { params: { id: string } }
         </div>
         <div className="space-y-6 text-right">
           <div className="space-y-2">
-            <span className="text-sm text-blue-600">کد محصول {product.id}</span>
-            <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
+            <span className="text-sm text-accent">کد محصول {product.id}</span>
+            <h1 className="text-3xl font-bold text-primary">{product.name}</h1>
           </div>
-          <p className="text-sm leading-7 text-gray-600 whitespace-pre-line">{description}</p>
-          <div className="flex flex-col gap-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+          <p className="text-sm leading-7 text-neutral/80 whitespace-pre-line">{description}</p>
+          <div className="flex flex-col gap-4 rounded-2xl bg-card p-6 shadow-md">
             <div className="flex items-baseline justify-between">
-              <span className="text-sm text-gray-500">قیمت با احتساب مالیات</span>
-              <strong className="text-2xl text-blue-700">
+              <span className="text-sm text-neutral/70">قیمت با احتساب مالیات</span>
+              <strong className="text-2xl text-primary">
                 {formatCurrency(product.priceWithTax, product.currencyCode)}
               </strong>
             </div>

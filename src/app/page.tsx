@@ -15,7 +15,7 @@ export default async function HomePage() {
   const personalGrowth = products.slice(5, 13)
 
   return (
-    <div className="space-y-16 pb-20">
+    <div className="space-y-16 pb-20 text-neutral">
       <Hero products={heroProducts} />
       <CategoryCarousel />
       <BookCarousel title="پرفروش‌ها" products={bestSellers} />
