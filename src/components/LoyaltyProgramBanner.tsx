@@ -18,8 +18,8 @@ const tiers = [
 
 export default function LoyaltyProgramBanner() {
   return (
-    <section className="px-4">
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-10 overflow-hidden rounded-3xl border border-primary/10 bg-gradient-to-r from-white via-secondary/60 to-white p-8 shadow-[0_40px_80px_-60px_rgba(15,23,42,0.22)] md:flex-row md:items-center md:p-12">
+    <section className="layout-frame">
+      <div className="relative flex flex-col gap-10 overflow-hidden rounded-3xl border border-primary/10 bg-gradient-to-r from-white via-secondary/60 to-white p-8 shadow-[0_40px_80px_-60px_rgba(15,23,42,0.22)] md:flex-row md:items-center md:p-12">
         <div className="absolute -left-24 top-1/3 h-56 w-56 rounded-full bg-accent/10 blur-3xl" />
         <div className="absolute -right-16 -top-12 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
         <div className="relative flex-1 space-y-6 text-primary">

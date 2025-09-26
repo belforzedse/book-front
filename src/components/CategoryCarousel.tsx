@@ -96,7 +96,7 @@ const CATEGORIES = [
 
 export default function CategoryCarousel() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+    <section className="mx-auto max-w-[1280px] px-4 py-12 sm:py-16">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="space-y-3 text-right">
           <p className="text-sm font-semibold text-primary/70">کاوش موضوعی</p>

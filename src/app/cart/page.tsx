@@ -15,7 +15,7 @@ export default function CartPage() {
   const currency = items.length > 0 ? items[0].currencyCode : "IRR"
 
   return (
-    <div className="mx-auto max-w-5xl space-y-8 px-4 py-12 text-neutral">
+    <div className="layout-frame space-y-8 py-12 text-neutral">
       <div className="flex flex-col gap-2 text-right">
         <h1 className="text-2xl font-bold text-primary">سبد خرید</h1>
         <p className="text-sm text-neutral/70">بررسی اقلام انتخاب شده و ادامه فرایند خرید</p>

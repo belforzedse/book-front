@@ -20,7 +20,7 @@ export default function Navbar({ className }: NavbarProps) {
 
   return (
     <nav className={cn("bg-transparent text-white", className)}>
-      <div className="mx-auto flex max-w-6xl items-center gap-3 overflow-x-auto px-4 py-3 text-sm">
+      <div className="layout-frame flex items-center gap-3 overflow-x-auto py-3 text-sm">
         {LINKS.map((item) => {
           const isActive =
             item.href === "/"

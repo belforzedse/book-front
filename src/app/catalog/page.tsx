@@ -18,7 +18,7 @@ export default async function CatalogPage({
     : products
 
   return (
-    <div className="mx-auto max-w-6xl space-y-8 px-4 py-12 text-neutral">
+    <div className="layout-frame space-y-8 py-12 text-neutral">
       <div className="flex flex-col gap-2 text-right">
         <h1 className="text-2xl font-bold text-primary">فهرست کتاب‌ها</h1>
         <p className="text-sm text-neutral/70">

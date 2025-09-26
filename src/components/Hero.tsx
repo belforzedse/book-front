@@ -43,7 +43,7 @@ export default function Hero({ products }: HeroProps) {
       <div className="pointer-events-none absolute -right-10 top-1/4 h-64 w-64 rounded-full bg-sky-200/70 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-16 right-1/2 h-60 w-60 translate-x-1/2 rounded-[40%] bg-emerald-100/60 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-12">
+      <div className="layout-frame relative grid items-center gap-12 lg:grid-cols-12">
         <div className="order-2 flex flex-col gap-8 rounded-3xl bg-white/80 p-8 text-neutral shadow-xl backdrop-blur lg:order-1 lg:col-span-6">
           <span className="text-sm font-semibold uppercase tracking-widest text-accent">کتابخانه‌ای برای همه</span>
           <div className="space-y-4 text-primary">

@@ -65,7 +65,7 @@ export default function AudioBooksSlider({ title, subtitle, products }: AudioBoo
   const dataset = fillProductsWithPlaceholders(products, 6)
 
   return (
-    <section className="mx-auto max-w-6xl px-4">
+    <section className="layout-frame">
       <div
         className="relative overflow-hidden rounded-3xl p-10 text-right text-white shadow-xl"
         style={waveformBackground}

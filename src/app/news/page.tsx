@@ -33,7 +33,7 @@ export default async function NewsPage() {
     : FALLBACK_NEWS
 
   return (
-    <div className="mx-auto max-w-6xl space-y-8 px-4 py-12 text-neutral">
+    <div className="layout-frame space-y-8 py-12 text-neutral">
       <div className="space-y-2 text-right">
         <h1 className="text-2xl font-bold text-primary">اخبار شهرکتاب</h1>
         <p className="text-sm text-neutral/70">گزارش رویدادها، تازه‌های نشر و گفت‌وگو با نویسندگان</p>
